@@ -104,7 +104,7 @@ label room:
     
     window show Dissolve(0.2)
     "Me at the school dormitory now"
-    "And sad..."
+    "And sed..."
     window hide Dissolve(0.2)
     
     scene blackout with Dissolve(0.5)
