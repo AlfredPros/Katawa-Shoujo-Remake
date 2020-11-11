@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 13, in script
+    h "Wake me up inside"
+Exception: The say screen (or show_function) must return a Text object.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 13, in script
+    h "Wake me up inside"
+  File "D:\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 555, in display_say
+    raise Exception("The say screen (or show_function) must return a Text object.")
+Exception: The say screen (or show_function) must return a Text object.
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+tugas 1 1.0
+Wed Nov 04 19:24:41 2020

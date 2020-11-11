@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 60: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    easein 0.2 xalign 0.75
+    ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Wed Nov 04 21:02:14 2020
