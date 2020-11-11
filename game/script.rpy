@@ -50,7 +50,7 @@ label start:
     scene school_hallway with Dissolve(0.4)
 
     window show Dissolve(0.2)
-    "I walk on the corridor as I saw a figure with dark purple hair"
+    "I walk on the corridor as I saw a figure with dark purple hair."
     
     show hanako bashful at t_mid
     
@@ -67,7 +67,7 @@ label start:
                 
     show lilly cheerful at t_left
     
-    l "What's up brudda"
+    l "What's up brudda?"
     h normal "Hi, Lilly. How are you?"
     l giggle "I'm doing great today."
     m "Are you guys going outside?"
@@ -89,7 +89,7 @@ label after_school:
     scene school_gate with Fade(0.5, 0.2, 0.5, color="#000")
     
     window show Dissolve(0.2)
-    "okay, me at school gate"
+    "okay, me at school gate."
     "But they left me mid way."
     "sedd"
     window hide Dissolve(0.2)
@@ -103,7 +103,7 @@ label room:
     scene school_dormhisao with Fade(0.5, 0.2, 0.5, color="#000")
     
     window show Dissolve(0.2)
-    "asdaskd adasd asdasd asdasd sad sad ad "
+    "Me at the school dormitory now."
     "And sad..."
     window hide Dissolve(0.2)
     
