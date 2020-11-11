@@ -2,9 +2,6 @@
 define h = Character("Hanako", color="#8A7587", image="hanako")
 define l = Character("Lilly", color="#F8F3B6", image="lilly")
 define m = Character("Me", color="#E6FF49")
-define life = Character("You", color="#194834")
-#Yes no
-#No yes
 
 transform t_mid:
     align(0.5, 1.0) alpha 0.0 zoom 0.98
