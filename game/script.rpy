@@ -2,9 +2,6 @@
 define h = Character("Hanako", color="#8A7587", image="hanako")
 define l = Character("Lilly", color="#F8F3B6", image="lilly")
 define m = Character("Me", color="#E6FF49")
-define life = Character("You", color="#194834")
-#Yes no
-#No yes
 
 transform t_mid:
     align(0.5, 1.0) alpha 0.0 zoom 0.98
@@ -50,7 +47,7 @@ label start:
     scene school_hallway with Dissolve(0.4)
 
     window show Dissolve(0.2)
-    "I walk on the corridor as I saw a figure with dark purple hair."
+    "I walk on the corridor as I saw a figure with dark purple hair"
     
     show hanako bashful at t_mid
     
@@ -89,7 +86,7 @@ label after_school:
     scene school_gate with Fade(0.5, 0.2, 0.5, color="#000")
     
     window show Dissolve(0.2)
-    "okay, me at school gate."
+    "okay, me at school gate"
     "But they left me mid way."
     "sedd"
     window hide Dissolve(0.2)
@@ -103,8 +100,8 @@ label room:
     scene school_dormhisao with Fade(0.5, 0.2, 0.5, color="#000")
     
     window show Dissolve(0.2)
-    "Me at the school dormitory now."
-    "And sad..."
+    "ajsdn dijasidt asoud chol butt asdnausd"
+    "And sed..."
     window hide Dissolve(0.2)
     
     scene blackout with Dissolve(0.5)
