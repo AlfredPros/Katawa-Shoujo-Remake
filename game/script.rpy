@@ -64,7 +64,7 @@ label start:
                 
     show lilly cheerful at t_left
     
-    l "What's up brudda"
+    l "What's up brudda?"
     h normal "Hi, Lilly. How are you?"
     l giggle "I'm doing great today."
     m "Are you guys going outside?"
