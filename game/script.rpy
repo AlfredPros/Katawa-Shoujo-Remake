@@ -103,7 +103,7 @@ label room:
     scene school_dormhisao with Fade(0.5, 0.2, 0.5, color="#000")
     
     window show Dissolve(0.2)
-    "Me at the school dormitory now"
+    "ajsdn dijasidt asoud chol butt asdnausd"
     "And sed..."
     window hide Dissolve(0.2)
     
