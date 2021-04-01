@@ -23,17 +23,17 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#99ccff'
+define gui.accent_color = '#686256'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#988A6F' #888
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#c1e0ff'
+define gui.hover_color = '#686256' #c1e0ff
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -64,10 +64,10 @@ define gui.name_text_font = "playtime_bold.ttf"
 define gui.interface_text_font = "VL-PGothic-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 25
+define gui.text_size = 32
 
 ## The size of character names.
-define gui.name_text_size = 32
+define gui.name_text_size = 35
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 22
@@ -132,7 +132,7 @@ define gui.dialogue_xpos = 268
 define gui.dialogue_ypos = 50
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 744
+define gui.dialogue_width = 1100 #744
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -307,8 +307,8 @@ define gui.frame_tile = False
 ## The height of horizontal bars, scrollbars, and sliders. The width of vertical
 ## bars, scrollbars, and sliders.
 define gui.bar_size = 25
-define gui.scrollbar_size = 12
-define gui.slider_size = 25
+define gui.scrollbar_size = 28
+define gui.slider_size = 30
 
 ## True if bar images should be tiled. False if they should be linearly scaled.
 define gui.bar_tile = False
@@ -451,8 +451,8 @@ init python:
         gui.quick_button_text_size = 20
 
         ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+        gui.file_slot_cols = 1
+        gui.file_slot_rows = 1
 
         ## NVL-mode.
         gui.nvl_height = 170

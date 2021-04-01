@@ -5,6 +5,12 @@
 ## may want to uncomment them when appropriate.
 
 
+## Forbidden Stuffs ############################################################
+
+define _history = False
+define config.has_autosave = False
+
+
 ## Basics ######################################################################
 
 ## A human-readable name of the game. This is used to set the default window
@@ -12,7 +18,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("tugas 1")
+define config.name = _("Katawa Shoujo Remake")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +43,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "tugas1"
+define build.name = "Katawa-Shoujo-Remake"
 
 
 ## Sounds and music ############################################################
@@ -47,7 +53,10 @@ define build.name = "tugas1"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
+
+define config.default_music_volume = 0.55
+define config.default_sfx_volume = 0.55
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -61,7 +70,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "Wiosna.ogg"
 
 
 ## Transitions #################################################################
@@ -78,7 +87,7 @@ define config.exit_transition = ImageDissolve(im.Tile("tr-dots_col.png"), 0.75, 
 
 ## Between screens of the game menu.
 
-define config.intra_transition = dissolve
+define config.intra_transition = ImageDissolve(im.Tile("tr-dots_col.png"), 0.75, reverse=True)
 
 
 ## A transition that is used after a game has been loaded.
@@ -88,7 +97,7 @@ define config.after_load_transition = None
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = Dissolve(0.4)
 
 
 ## A variable to set the transition used when the game starts does not exist.
@@ -119,7 +128,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 60
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
@@ -142,7 +151,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "tugas1-1604489998"
+define config.save_directory = "katawa-shoujo-remake-1604489998"
 
 
 ## Icon ########################################################################

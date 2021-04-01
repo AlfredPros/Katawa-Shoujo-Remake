@@ -1,28 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 13, in script
-    h "Wake me up inside"
-Exception: The say screen (or show_function) must return a Text object.
+  File "game/screens.rpy", line 8, in script
+    init python:
+  File "game/screens.rpy", line 8, in script
+    init python:
+  File "game/screens.rpy", line 14, in <module>
+    from waapi import WaapiClient, CannotConnectToWaapiException
+AttributeError: 'module' object has no attribute 'ABC'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 13, in script
-    h "Wake me up inside"
-  File "D:\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
-    who(what, *args, **kwargs)
-  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
-    **display_args)
-  File "D:\renpy-7.3.5-sdk\renpy\character.py", line 555, in display_say
-    raise Exception("The say screen (or show_function) must return a Text object.")
-Exception: The say screen (or show_function) must return a Text object.
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 515, in main
+    renpy.game.context().run(node)
+  File "game/screens.rpy", line 8, in script
+    init python:
+  File "game/screens.rpy", line 8, in script
+    init python:
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/screens.rpy", line 14, in <module>
+    from waapi import WaapiClient, CannotConnectToWaapiException
+  File "D:\renpy-7.3.5-sdk/module/waapi/__init__.py", line 2, in <module>
+    from waapi.client import *
+  File "D:\renpy-7.3.5-sdk/module/waapi/client/__init__.py", line 1, in <module>
+    from waapi.client.client import *
+  File "D:\renpy-7.3.5-sdk/module/waapi/client/client.py", line 4, in <module>
+    from waapi.client.event import EventHandler
+  File "D:\renpy-7.3.5-sdk/module/waapi/client/event.py", line 1, in <module>
+    from autobahn.wamp.request import Subscription
+  File "D:\renpy-7.3.5-sdk/module/autobahn/wamp/__init__.py", line 27, in <module>
+    from autobahn.wamp.types import \
+  File "D:\renpy-7.3.5-sdk/module/autobahn/wamp/types.py", line 28, in <module>
+    from autobahn.util import public
+  File "D:\renpy-7.3.5-sdk/module/autobahn/util.py", line 41, in <module>
+    import txaio
+  File "D:\renpy-7.3.5-sdk/module/txaio/__init__.py", line 29, in <module>
+    from txaio.interfaces import IFailedFuture, ILogger
+  File "D:\renpy-7.3.5-sdk/module/txaio/interfaces.py", line 41, in <module>
+    class IBatchedTimer(abc.ABC):
+AttributeError: 'module' object has no attribute 'ABC'
 
-Windows-8-6.2.9200
-Ren'Py 7.3.5.606
-tugas 1 1.0
-Wed Nov 04 19:24:41 2020
+Windows-10-10.0.18362
+Ren'Py 7.4.1.1270
+Katawa Shoujo Remake 1.0
+Mon Jan 25 18:53:17 2021
