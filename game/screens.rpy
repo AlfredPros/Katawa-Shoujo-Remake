@@ -269,7 +269,7 @@ screen credit():
             ypos 150 xalign 0.5
             style "text_thanks"
     elif rhy < 19.201:
-        text "{color=#C5C5C5}Programming and Writing\n(I'm fast af boi!){/color}\n\nAlfredPros" at other_credit(2.814):
+        text "{color=#C5C5C5}Programming and Writing\n(I'm fast af boi!){/color}\n\nAlfredPros" at other_credit(3.105):
             ypos 150 xalign 0.5
             style "text_thanks"  #fadeout (at 16:097)
     elif rhy < 22.306:
