@@ -535,8 +535,6 @@ screen main_menu():
         textbutton _("Quit") action Quit(confirm=not main_menu):
             text_style "main_button"
             
-        text "path_to_studio_dll":
-            style "main_button"
             
     # The title texts.
     vbox:
