@@ -289,8 +289,8 @@ screen credit():
             ypos 150 xalign 0.5
             style "text_thanks"  #fadeout (at 33:076)
         
-    timer abs(0.001) action SetVariable("y", abs(1)) repeat True  # Used to make the screen to constantly refresh.
-    timer abs(51.600) action MainMenu(confirm=False)
+    timer 0.001 action SetVariable("y", 0) repeat True  # Used to make the screen to constantly refresh.
+    timer 51.600 action MainMenu(confirm=False)
     
 
 screen ctc():
